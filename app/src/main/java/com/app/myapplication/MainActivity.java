@@ -98,6 +98,11 @@ public class MainActivity extends AppCompatActivity {
                 //5
                 Toast.makeText(this, "Winner is " + b3, Toast.LENGTH_SHORT).show();
                 resetGameWithDelay();
+            } else if (!b1.equals("") && !b2.equals("") && !b3.equals("") &&
+                    !b4.equals("") && !b5.equals("") && !b6.equals("") &&
+                    !b7.equals("")&&!b8.equals("")&&!b9.equals("")) {
+                Toast.makeText(this, "Game is Drown", Toast.LENGTH_SHORT).show();
+                resetGameWithDelay();
             }
         }
 
@@ -132,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                         });
                     }
                 },
-                2000 // Delay in milliseconds
+                3000 // Delay in milliseconds
         );
     }
 }
